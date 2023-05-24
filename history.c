@@ -53,12 +53,7 @@ int write_history(info_t *info)
 	return (1);
 }
 
-/**
- * read_history - reads history from file
- * @info: the parameter struct
- *
- * Return: histcount on success, 0 otherwise
- */
+
 int read_history(info_t *info)
 {
 	int i, last = 0, linecount = 0;
@@ -102,14 +97,7 @@ int read_history(info_t *info)
 	return (info->histcount);
 }
 
-/**
- * build_history_list - adds entry to a history linked list
- * @info: Structure containing potential arguments. Used to maintain
- * @buf: buffer
- * @linecount: the history linecount, histcount
- *
- * Return: Always 0
- */
+
 int build_history_list(info_t *info, char *buf, int linecount)
 {
 	list_t *node = NULL;
